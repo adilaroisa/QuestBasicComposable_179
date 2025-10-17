@@ -18,10 +18,12 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            MyLayoutTheme {
+            MyApplicationTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     //Panggil compasable layout utama dengan padding dari scaffold
-                    TataletakBoxColumnRow(modifier = Modifier.padding(paddingValues = innerPadding)
+                    TataletakBoxColumnRow(
+                        modifier = Modifier.padding(paddingValues = innerPadding)
+                    )
                 }
             }
         }
