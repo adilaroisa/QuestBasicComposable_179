@@ -20,7 +20,6 @@ import  androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -148,9 +147,7 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
                 fontWeight = FontWeight.Bold,
                 fontFamily = FontFamily.Cursive,
                 modifier = Modifier.align(
-                    alignment = Alignment.Center
-                )
-            )
+                    alignment = Alignment.Center))
         }
     }
 }
